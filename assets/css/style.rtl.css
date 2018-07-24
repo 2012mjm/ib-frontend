@@ -40,20 +40,29 @@ Version: 1.0
 
 /*----- fonts -----*/
 @font-face {
-    font-family: 'Samim';
-    src: url('../fonts/Samim.eot');
-    src: url('../fonts/Samim.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Samim.woff') format('woff'),
-         url('../fonts/Samim.ttf') format('truetype');
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Light.eot');
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IRANSansWeb/woff/IRANSansWeb_Light.woff') format('woff'),
+         url('../fonts/IRANSansWeb/ttf/IRANSansWeb_Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Samim';
-    src: url('../fonts/Samim-Bold.eot');
-    src: url('../fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Samim-Bold.woff') format('woff'),
-         url('../fonts/Samim-Bold.ttf') format('truetype');
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Medium.eot');
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IRANSansWeb/woff/IRANSansWeb_Medium.woff') format('woff'),
+         url('../fonts/IRANSansWeb/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Bold.eot');
+    src: url('../fonts/IRANSansWeb/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IRANSansWeb/woff/IRANSansWeb_Bold.woff') format('woff'),
+         url('../fonts/IRANSansWeb/ttf/IRANSansWeb_Bold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -64,7 +73,7 @@ body {
 }
 
 body {
-	font-family: 'Samim', 'Poppins', sans-serif;
+	font-family: 'IRANSansWeb', 'Poppins', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 28px;
@@ -123,7 +132,7 @@ h4,
 h5,
 h6 {
 	font-weight: 500;
-	font-family: 'Samim', sans-serif;
+	font-family: 'IRANSansWeb', sans-serif;
 	margin: 0 0 15px;
 }
 
