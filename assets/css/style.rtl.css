@@ -6127,6 +6127,15 @@ body.home4 .home4-hero-mobile,
 	direction: ltr;
 }
 
+.alert-success-contact {
+	display: none;
+	position: fixed;
+    bottom: 0;
+    right: 20px;
+	z-index: 1000000;
+	width: 300px;
+}
+
 /* ====/========        ===== ==/====/
    End Css
 ====/========        =======/==== */

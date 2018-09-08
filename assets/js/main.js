@@ -175,6 +175,26 @@
             return false;
         });
 
+
+        $('#contact-form').submit(function(e) {
+            e.preventDefault()
+
+            let form = $(this)
+            console.log(form)
+            
+            const url = 'http://api.ibapp.ir/v1/message'
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    $('.alert-success-contact div').text(data.messages[0])
+                    $('.alert-success-contact').fadeIn(); // show response from the php script.
+                }
+            })
+        })
     });
 
     /*====  Window Load Function =====*/
