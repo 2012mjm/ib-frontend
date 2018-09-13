@@ -1676,7 +1676,7 @@ body.home2 .blog-slide-area.cta {
 }
 
 .featured-mobile img {
-	height: 600px;
+	max-width: none;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1803,7 +1803,7 @@ body.home6 .screenshot-slide:after {
 .screenshot-area .owl-nav div {
     position: absolute;
     right: 45%;
-    font-size: 30px;
+    font-size: 35px;
     height: 40px;
     width: 40px;
     border: 1px solid;
@@ -1815,6 +1815,14 @@ body.home6 .screenshot-slide:after {
     -webkit-transform: translateX(46%);
     transform: translateX(45%);
     bottom: -90px;
+}
+.screenshot-area .owl-nav div .zmdi-chevron-right {
+	margin-top: 2px;
+    margin-left: 4px;
+}
+.screenshot-area .owl-nav div .zmdi-chevron-left {
+	margin-top: 2px;
+    margin-left: 0;
 }
 
 @media (max-width: 767px) {
@@ -1865,11 +1873,11 @@ body.home6 .screenshot-slide:after {
 	background: #fa8371;
 	/* Old browsers */
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(right, #fa8371 100%, #fdbe6a 100%);
+	background: -webkit-linear-gradient(right, #c13748 0%, #e05e6e 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to left, #fa8371 100%, #fdbe6a 100%);
+	background: linear-gradient(to left, #e05e6e 0%, #c13748 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8371', endColorstr='#fdbe6a', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e05e6e', endColorstr='#c13748', GradientType=1);
 	/* IE6-9 */
 }
 
@@ -1892,6 +1900,7 @@ body.home6 .screenshot-slide:after {
 
 .get-area-left h1 {
 	margin-bottom: 25px;
+	color: #FFF;
 }
 
 @media (max-width: 767px) {
@@ -1904,6 +1913,7 @@ body.home6 .screenshot-slide:after {
 	opacity: .60;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	line-height: 28px;
+	color: #FFF;
 }
 
 .get-app-mobile-app {
@@ -2255,9 +2265,14 @@ span.testimonial-meta {
 	padding: 80px 0px;
 }
 
+.counter-area .zmdi {
+	font-size: 60px;
+	color: #FFF;
+}
+
 .counter-area:after {
-	background-image: -webkit-linear-gradient(0deg, #fc826d 0%, #fea268 60%, #ffc163 100%);
-	background-image: -ms-linear-gradient(0deg, #fc826d 0%, #fea268 60%, #ffc163 100%);
+	background-image: -webkit-linear-gradient(right, #c13748 0%, #e05e6e 100%);
+	background-image: -ms-linear-gradient(0deg, #c13748 0%, #e05e6e 60%, #e05e6e 100%);
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -6136,6 +6151,12 @@ body.home4 .home4-hero-mobile,
 	width: 300px;
 }
 
+.contact-phone {
+	direction: ltr;
+	display: inline-block;
+}
+
 /* ====/========        ===== ==/====/
    End Css
 ====/========        =======/==== */
+
