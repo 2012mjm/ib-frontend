@@ -175,6 +175,14 @@
             return false;
         });
 
+        $('.logo a').click(function(e) {
+            e.preventDefault()
+            $('html, body').stop().animate({
+                scrollTop: $($(this).attr('href')).offset().top - 0
+            }, 1000);
+            return false;
+        })
+
 
         $('#contact-form').submit(function(e) {
             e.preventDefault()
